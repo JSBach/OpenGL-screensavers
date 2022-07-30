@@ -34,7 +34,7 @@ int main()
 	float color[3] = { 0.0f, 0.5f, 0.0f };
 	double prev_time, current_time;
 	Spirograph spirograph((float)MAIN_WINDOW_HEIGHT / (float)MAIN_WINDOW_WIDTH);
-	spirograph.SetColorMode(3);
+	spirograph.SetColorMode(12);
 
 	glfwInit();
 

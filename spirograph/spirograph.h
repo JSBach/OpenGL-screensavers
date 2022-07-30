@@ -24,7 +24,7 @@ public:
 	//-----------------
 	static const unsigned int MAX_VERTEX_CAPACITY = 1000; //the object will not contain more vertices than this maximum
 	static const unsigned int VERTEX_SIZE = 5; // 2 floats for x, y coords, 3 floats for solid rgb color
-	static const unsigned int MAX_GRADIENT_INDEX = 2;
+	static const unsigned int MAX_GRADIENT_INDEX = 12;
 
 	//METHODS
 	//---------------

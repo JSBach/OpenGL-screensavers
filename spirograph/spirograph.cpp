@@ -11,10 +11,33 @@ void TestFillColors(float* colors, int count);
 float gradient_scheme_0_stops[6] = { 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f }; //red to dark
 float gradient_scheme_1_stops[6] = { 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f }; //green to dark
 float gradient_scheme_2_stops[6] = { 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f }; //blue to dark
+float gradient_scheme_3_stops[6] = { 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f }; //red to white
+float gradient_scheme_4_stops[6] = { 0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f }; //green to white
+float gradient_scheme_5_stops[6] = { 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f }; //blue to white
+float gradient_scheme_6_stops[6] = { 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f }; //red to green
+float gradient_scheme_7_stops[6] = { 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f }; //red to blue
+float gradient_scheme_8_stops[6] = { 0.0f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f }; //green to red
+float gradient_scheme_9_stops[6] = { 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f }; //green to blue
+float gradient_scheme_10_stops[6] = { 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f }; //blue to red
+float gradient_scheme_11_stops[6] = { 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f }; //blue to green
+float gradient_scheme_12_stops[21] = { 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 
+										0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+										0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 1.0f,
+										1.0f, 0.0f, 0.0f}; //color wheel
 
 float gradient_scheme_0_ratios[1] = { 1.0f };
 float gradient_scheme_1_ratios[1] = { 1.0f };
 float gradient_scheme_2_ratios[1] = { 1.0f };
+float gradient_scheme_3_ratios[1] = { 1.0f };
+float gradient_scheme_4_ratios[1] = { 1.0f };
+float gradient_scheme_5_ratios[1] = { 1.0f };
+float gradient_scheme_6_ratios[1] = { 1.0f };
+float gradient_scheme_7_ratios[1] = { 1.0f };
+float gradient_scheme_8_ratios[1] = { 1.0f };
+float gradient_scheme_9_ratios[1] = { 1.0f };
+float gradient_scheme_10_ratios[1] = { 1.0f };
+float gradient_scheme_11_ratios[1] = { 1.0f };
+float gradient_scheme_12_ratios[6] = { 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f };
 
 struct GradientScheme
 {
@@ -26,8 +49,23 @@ struct GradientScheme
 GradientScheme gradient_scheme_0 = { gradient_scheme_0_stops, gradient_scheme_0_ratios, 1 };
 GradientScheme gradient_scheme_1 = { gradient_scheme_1_stops, gradient_scheme_1_ratios, 1 };
 GradientScheme gradient_scheme_2 = { gradient_scheme_2_stops, gradient_scheme_2_ratios, 1 };
+GradientScheme gradient_scheme_3 = { gradient_scheme_3_stops, gradient_scheme_3_ratios, 1 };
+GradientScheme gradient_scheme_4 = { gradient_scheme_4_stops, gradient_scheme_4_ratios, 1 };
+GradientScheme gradient_scheme_5 = { gradient_scheme_5_stops, gradient_scheme_5_ratios, 1 };
+GradientScheme gradient_scheme_6 = { gradient_scheme_6_stops, gradient_scheme_6_ratios, 1 };
+GradientScheme gradient_scheme_7 = { gradient_scheme_7_stops, gradient_scheme_7_ratios, 1 };
+GradientScheme gradient_scheme_8 = { gradient_scheme_8_stops, gradient_scheme_8_ratios, 1 };
+GradientScheme gradient_scheme_9 = { gradient_scheme_9_stops, gradient_scheme_9_ratios, 1 };
+GradientScheme gradient_scheme_10 = { gradient_scheme_10_stops, gradient_scheme_10_ratios, 1 };
+GradientScheme gradient_scheme_11 = { gradient_scheme_11_stops, gradient_scheme_11_ratios, 1 };
+GradientScheme gradient_scheme_12 = { gradient_scheme_12_stops, gradient_scheme_12_ratios, 6 };
 
-GradientScheme gradient_schemes[3] = { gradient_scheme_0, gradient_scheme_1, gradient_scheme_2 };
+
+GradientScheme gradient_schemes[13] = { gradient_scheme_0, gradient_scheme_1, gradient_scheme_2,
+										gradient_scheme_3, gradient_scheme_4, gradient_scheme_5,
+										gradient_scheme_6, gradient_scheme_7, gradient_scheme_8,
+										gradient_scheme_9, gradient_scheme_10, gradient_scheme_11,
+										gradient_scheme_12 };
 
 Spirograph::Spirograph() : Spirograph(1.0)
 {

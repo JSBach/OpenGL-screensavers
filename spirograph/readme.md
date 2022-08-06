@@ -5,7 +5,7 @@ The spirograph screensaver draws epicycloids and hypocycloids.
 # Features
 
 - Settable parameters
-  - stationary circla radius and position
+  - stationary circle radius and position
   - moving circle radius 
   - drawing point radius and initial angular position
   - non-unity screen ratio distortion compensation

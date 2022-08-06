@@ -2,6 +2,16 @@
 
 The spirograph screensaver draws epicycloids and hypocycloids.
 
+# Features
+
+- Settable parameters
+  - stationary circle radius and position
+  - moving circle radius 
+  - drawing point radius and initial angular position
+  - non-unity screen ratio distortion compensation
+  - epicycloid/hypocycloid switch
+  - point colors - either static or gradient
+
 # TODO list
 
 ## Finish the setup
@@ -11,14 +21,17 @@ The spirograph screensaver draws epicycloids and hypocycloids.
 
 ## Finish the functionality
 
-- Implement color modes (static and gradient)
-- Implement some color schemes
 - Implement parameters mode (static and dynamic)
 - Implement dynamic parameters behavior
 - Implement fullscreen mode
 - Implement settings dialog
 - Implement behavior dependency on command line
 - Implement sprite drawing mode (in addition to existing point mode)
+- Improve parameters setting
+  - Create constants for default values and use them in the one argument constructor
+  - Create a constructor for setting all parameters at once
+  - Create individual setters for each parameter
+- Check and implement al TODOs in the source code
 
 ## Refine the documentation
-- Create feature list (combine the TODO and the already implemented features)
+- Add more coments to the source code
